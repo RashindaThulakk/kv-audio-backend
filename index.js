@@ -1,5 +1,8 @@
 import express from "express"
-const app = express()
+import bodyparser from "body-parser"
+
+app.use(bodyparser.json());
+const app = express();
 
 
 app.get("/",(req,res)=>{
